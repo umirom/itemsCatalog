@@ -1,0 +1,22 @@
+body {
+    background: url(images/hipster_guy.jpg) center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+}
+
+.login-section {
+    background-color: rgba(194, 2, 79, 1); 
+    width:30%;
+    margin-top:50px;
+    padding:20px;
+    color: #CBDBD7;
+}
+
+.sign-in {
+    font-size:150%;
+}

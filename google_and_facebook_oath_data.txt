@@ -1,0 +1,7 @@
+Google OAth for Hipster Recipe Database:
+
+Client-ID:439626048325-0rl1anqpqk66n0rsr3u29s92qio7ps1p.apps.googleusercontent.com
+Client secret: ymxsh7J-co5DFRY4gARnRQGT
+
+Facebook App ID for Hipster Recipe Database:
+176884773056253

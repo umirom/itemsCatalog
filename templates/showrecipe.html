@@ -1,0 +1,22 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% block content %}
+
+    <div class='overview-recipes'>
+        <h1>{{recipe.name}}</h1>
+        <h4>{{recipe.description}}</h4>
+        <div>
+            {{recipe.instruction}}
+        </div>
+    </div>
+        <div class='button'>
+            <a href="{{url_for('editRecipe', rec_id = recipe.id)}}">Edit {{recipe.name}} Recipe</a>
+        </div>
+        <div class='button'>
+            <a href="{{url_for('deleteRecipe', rec_id = recipe.id)}}">Delete {{recipe.name}} Recipe</a>
+        </div>
+        <div class='return-button'>
+            <a href="{{url_for('Overview')}}">Look for more recipes!</a>
+        </div>
+
+{% endblock %}

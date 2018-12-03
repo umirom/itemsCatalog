@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset='utf-8'>
+        <title>Hipster recipes</title>
+		<link href="https://fonts.googleapis.com/css?family=Bungee|Roboto" rel="stylesheet">
+		<!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">-->
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='mainstyle.css') }}">
+	</head>
+	<body>
+		<div class="container">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+</html>

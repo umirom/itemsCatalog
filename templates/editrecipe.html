@@ -1,0 +1,27 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% block content %}
+<div class='overview-recipes form'>
+<h1>Edit <i>{{recipe.name}}</i></h1>
+
+<form method="POST" action="{{url_for('editRecipe', rec_id=recipe.id)}}">
+    <p>Recipe category: <br/>{{recipe.category.name}}</p>
+    <p>Recipe title:<br/>
+        <input type="text" name="recipe_name" placeholder = "{{recipe.name}}">
+    </p>
+    <p>Recipe description:<br/>
+        <textarea rows =4 cols=50 name="recipe_description">{{recipe.description}}</textarea>
+    </p>
+    <p>Recipe instructions:<br/>
+        <textarea rows = 10 cols=50 name="recipe_instruction">{{recipe.instruction}}</textarea>
+    </p>
+    <p>
+        <input type="submit" value="Save changes?">
+    </p>
+    
+</form>
+    <div class='return-button'>
+        <a href="{{url_for('showRecipe', rec_id = recipe.id)}}">Cancel and go back to recipe</a>
+    </div>
+</div>
+{% endblock %}

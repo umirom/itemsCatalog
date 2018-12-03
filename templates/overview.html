@@ -1,0 +1,46 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% block content %}
+
+        <div class='welcome'>
+        <h1>Welcome to the Hipster Recipe Database!</h1>
+        <p class='intro'>Browse through dozens of recipes, added by the hippest people in the world.<br/><br/>
+        Also, if you are hip enough yourself, you can add your favourite recipes to inspire other hipsters all around the world.</p>
+        </div>
+        
+        <div class="overview-categories">
+        <h2>Browse categories:</h2>
+        <div class='categories'>
+            {% for c in categories %}
+            <br/>
+            <a href="{{url_for('showCategory', cat_id = c.id)}}">{{c.name}}</a> (Category # {{c.id}})
+            <br/>
+            {% endfor %}
+        </div>
+        </div>
+        <div class="overview-recipes">
+        <h2>Get random inspiration:</h2>
+           <div>
+                {% for r in recipes %}
+               <br/>
+               <a href="{{url_for('showRecipe', rec_id = r.id)}}">{{r.name}}</a><br/>
+               {{r.description}}
+               <br/>
+               {% endfor %}
+            </div>
+        </div>
+        <div class = 'button'>
+        <a href="{{url_for('addRecipe')}}">Create a new recipe!</a>
+        </div>
+        
+        <!-- <div>
+            <h2>Registered users:</h2>
+            <div>
+                <ul>
+                {% for u in users %}
+                    <li>{{u.name}} User # {{u.id}}</li>
+                </ul>
+                {% endfor %}
+            </div>
+        </div> -->
+{% endblock %}

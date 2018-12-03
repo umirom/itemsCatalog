@@ -1,0 +1,120 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(images/vegetables.jpg) center center fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color: #CBDBD7;
+}
+
+h1, h2, h3 {
+    font-family: 'Bungee', cursive;
+}
+
+h4 {
+    font-size:150%;
+}
+
+.head {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding:20px;
+    background-color: rgba(194, 2, 79, 0.5);
+    text-align: center;
+    font-size: 120%;
+}
+
+.head a {
+    color: antiquewhite;
+}
+
+a{
+    color: #193441;
+    font-weight: bold;
+}
+
+.welcome {
+    background-color: rgba(4, 187, 191, 0.5);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:50px;
+}
+
+.overview-categories {
+    background-color: rgba(252, 177, 63, 0.5);
+    
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:50px;
+}
+
+.overview-recipes {
+    background-color: rgba(255, 89, 79, 0.5);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:50px;
+}
+
+.flash {
+    background-color: rgba(210, 217, 69, 0.5);
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+li {
+    list-style-type: none;
+}
+
+.button {
+    border: solid 2px #CBDBD7;
+    width:15%;
+    background-color: rgba(4, 187, 191, 0.6);
+    padding: 20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #CBDBD7;
+    font-size:120%;
+}
+
+.intro {
+    font-size:150%;
+}
+
+.return-button {
+    width:15%;
+    background-color: rgba(210, 217, 69, 0.7);
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 20px;
+    padding-right:20px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.form {
+    text-align: center;
+}
+
+.warning {
+    font-size: 200%;
+}

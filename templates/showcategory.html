@@ -1,0 +1,23 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% block content %}
+    <div class='overview-categories'>
+        <h1>{{category.name}}</h1>
+        <div>
+            {% for r in recipes %}
+            <br/>
+            <a href="{{url_for('showRecipe', rec_id = r.id)}}">{{r.name}}</a><br/>
+            <small>{{r.description}}</small><br/>
+            {% endfor %}
+            <br/>
+            </div>
+        </div>
+        <div class='button'>
+                <a href="{{url_for('addRecipe')}}">Add a new {{category.name}} recipe!</a>
+            </div>
+            <div class='return-button'>
+                <a href="{{url_for('Overview')}}">Browse more recipes!</a>
+            </div>
+
+        
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% block content %}
+<div class='overview-recipes'>
+        <h1>{{recipe.name}}</h1>
+        <h4>{{recipe.description}}</h4>
+        <div>
+            {{recipe.instruction}}
+        </div>
+        <p>
+            <a href="{{url_for('Overview')}}">Look for more recipes!</a>
+        </p>
+</div>
+{% endblock %}

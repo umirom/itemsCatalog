@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% block content %}
+<div class='overview-recipes form'>
+<div class='warning'>
+Are you sure you want to delete <i>{{recipe.name}}</i> for good? <br/>This cannot be undone!<br/><br/>
+    </div>
+<form action="" method="post">
+    <input type="submit" value="Delete for good!"><br/>
+    <div class='return-button'>
+    <a href="{{url_for('showRecipe', rec_id = recipe.id)}}">Return to recipe for {{recipe.name}}</a>
+    </div>
+</form>
+
+    </div>
+{% endblock %}

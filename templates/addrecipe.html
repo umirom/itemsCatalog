@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% include "header.html" %}
+{% block content %}
+    <div class='overview-recipes form'>
+        <h1>Add a new, hip recipe</h1>
+
+        <form method='POST' action="{{url_for('addRecipe')}}">
+            <select name="recipe_category">
+                <option value="" selected disabled hidden>Select recipe category</option>
+                {% for c in categories %}
+                <option value= "{{ c.id }}">{{ c.name }}</option>
+                {% endfor %}
+           </select>
+            <p><input name = "recipe_name" type="text" placeholder="Recipe name"></p>
+            <p><textarea rows =2 cols=50 name="recipe_description" placeholder="Add a short discription of your super-hip recipe"></textarea></p>
+            <p><textarea rows=20 cols=100 name = "recipe_instruction" placeholder="Add detailed instructions how to prepare your super-hip recipe. Btw: We are so retro that you cannot format your text because formatting is overrated."></textarea></p>
+            <p><input type="submit" value="Create recipe"></p>
+            <p class ='return-button'><a href="{{url_for('Overview')}}">Cancel and go back</a></p>
+        </form>
+    </div>
+{% endblock %}
